@@ -16,11 +16,11 @@ def solve_bvp(N=24, b2=0.0):
     a2 = 7/8 - (223/88)*b2
     a3 = 1/8 + (119/88)*b2
     a4 = -(23/264)*b2 - 1/24
-    b1 = b2/11 - 1.0  # multiplies y'(0), y'(1), but those are 0 here
+    b1 = b2/11 - 1.0 
 
     A = np.zeros((N, N))
     B = np.zeros((N, N))
-    g = np.zeros(N)  # y'(0)=y'(1)=0 => g=0
+    g = np.zeros(N)
 
     # Left boundary row (i=1)
     A[0, 0] = 1.0

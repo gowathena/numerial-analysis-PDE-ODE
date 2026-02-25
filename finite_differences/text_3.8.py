@@ -37,11 +37,11 @@ def compute_rules(n):
         end_corr_trap(fx, h),
     )
 
-# reference integral (fine Simpson)
+
 n_ref = 2**16
 I_ref = compute_rules(n_ref)[1]
 
-ns = 2**np.arange(3, 11)  # 8..1024
+ns = 2**np.arange(3, 11)
 errT, errS, errTc = [], [], []
 
 for n in ns:

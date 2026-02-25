@@ -1,11 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-theta = np.linspace(0, np.pi, 600)  # theta = k*Delta
+theta = np.linspace(0, np.pi, 600)
 
 kcd2_D = np.sin(theta)                          # (k')Delta for CD2
 kpade_D = 3*np.sin(theta) / (2 + np.cos(theta)) # (k')Delta for Pade4
-exact = theta                                   # exact: k' = k
+exact = theta  
 
 plt.figure()
 plt.plot(theta, exact, label="exact: k'Δ = kΔ")
